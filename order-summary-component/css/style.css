@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --cor1: hsl(225, 100%, 94%);
+  --cor2: hsl(245, 75%, 52%);
+  --cor3: hsl(225, 100%, 98%);
+  --cor4: hsl(224, 23%, 55%);
+  --cor5: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: var(--cor1);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div#caixa {
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: hsla(245deg, 75%, 52%, 0.2) 0px 5px 10px 0px;
+}
+
+img#principal {
+  display: flex;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+h1 {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  color: var(--cor5);
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+div#caixa > p {
+  max-width: 300px;
+  line-height: 1.5em;
+  font-size: 0.88em;
+  font-weight: 400;
+  text-align: center;
+  color: var(--cor4);
+  margin-bottom: 20px;
+}
+
+div#plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor3);
+  width: 90%;
+  height: 85px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+div#wrapper_esquerda {
+  display: flex;
+}
+
+img#icone {
+  width: 50px;
+  height: 50px;
+  margin: 0px 20px 0px 20px;
+}
+
+p#annual {
+  color: var(--cor5);
+  font-weight: 900;
+  padding-bottom: 3px;
+}
+
+p#price {
+  color: var(--cor4);
+}
+
+a {
+  margin-right: 15px;
+  font-size: 0.8em;
+  color: var(--cor2);
+  font-weight: 700;
+}
+
+div#payment {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  background-color: var(--cor2);
+  box-shadow: hsla(245deg, 75%, 52%, 0.2) 3px 10px 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+div#cancel {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  color: var(--cor4);
+  font-size: 0.9em;
+  padding-bottom: 20px;
+}

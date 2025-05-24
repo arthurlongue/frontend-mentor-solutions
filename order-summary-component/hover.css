@@ -1,0 +1,14 @@
+a:hover {
+  text-decoration: none;
+  color: hsl(245, 90%, 75%);
+}
+
+div#payment:hover {
+  background-color: hsl(245, 75%, 65%);
+  cursor: pointer;
+}
+
+div#cancel:hover{
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
