@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210deg, 46%, 95%);
+  padding: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.card h1 {
+  font-size: 1.2em;
+  color: hsl(217deg, 19%, 35%);
+  padding-bottom: 5%;
+}
+.card p {
+  color: hsl(214deg, 17%, 51%);
+  line-height: 1.5em;
+  word-spacing: 5px;
+}
+.card img.drawer {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  min-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.text {
+  padding: 10% 10% 0 10%;
+}
+
+.subtext {
+  margin-bottom: 10%;
+}
+
+#person {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+#person #michelle {
+  padding-right: 25%;
+}
+#person h2 {
+  font-size: 0.9em;
+  color: hsl(217deg, 19%, 35%);
+  white-space: nowrap;
+}
+#person p {
+  color: hsl(212deg, 23%, 69%);
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.share {
+  display: flex;
+  width: 100%;
+  height: 13%;
+  align-items: center;
+  background-color: hsl(217deg, 19%, 35%);
+  color: hsl(212deg, 23%, 69%);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.share .sharesvg {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.share .triangle {
+  width: 20px;
+  height: 20px;
+  background-color: hsl(217deg, 19%, 35%);
+  position: absolute;
+  transform: rotateY(0deg) rotate(45deg);
+  top: 10%;
+  left: 10%;
+}
+
+#button {
+  background-color: hsl(210deg, 46%, 95%);
+  border-radius: 50px;
+  padding: 8px;
+  margin-right: 4%;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border: none;
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .card {
+    align-items: stretch;
+    flex-direction: row;
+    min-width: 750px;
+    max-height: 300px;
+  }
+  .card img.drawer {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+    max-width: 300px;
+    min-width: auto;
+    border-radius: 10px 0 0 10px;
+  }
+  .card p {
+    font-size: 0.9em;
+  }
+  .text {
+    padding: 5%;
+  }
+  .subtext {
+    margin-bottom: 5%;
+  }
+  .share {
+    display: flex;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    left: 80%;
+    bottom: 25%;
+    justify-content: space-evenly;
+    display: none;
+  }
+  .share .sharesvg {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .share .triangle {
+    top: 70%;
+    left: 35%;
+  }
+}
