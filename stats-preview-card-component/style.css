@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+  --cor1: hsl(233, 47%, 7%);
+  --cor2: hsl(244, 38%, 16%);
+  --cor3: hsl(277, 64%, 61%);
+  --cor4: hsl(0, 0%, 100%);
+  --cor5: hsla(0, 0%, 100%, 0.75);
+  --cor6: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--cor1);
+  justify-content: center;
+  align-items: center;
+}
+
+div#card {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 800px;
+  height: 350px;
+  justify-content: center;
+  position: relative;
+}
+
+#pink {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  background-color: hsl(277, 70%, 53%);
+  border-radius: 0 5px 5px 0;
+  opacity: 35%;
+  right: 0;
+  top: 0;
+}
+
+.responsive {
+  display: none;
+}
+
+#image {
+  display: flex;
+  width: 400px;
+  height: 350px;
+  border-radius: 0 5px 5px 0;
+}
+
+#image > img {
+  width: 400px;
+  height: 350px;
+}
+
+.desktop {
+  border-radius: 0 5px 5px 0;
+}
+
+div#content {
+  display: flex;
+  width: 340px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--cor2);
+  padding: 46.5px 10px 46.5px 50px;
+  border-radius: 5px 0 0 5px;
+}
+
+div#text {
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+}
+
+div#text > h1 {
+  font-size: 1.8em;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--cor4);
+  margin-bottom: 20px;
+  text-align: justify;
+  width: 300px;
+}
+
+span {
+  color: var(--cor3);
+}
+
+div#text > p {
+  font-size: 0.8em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--cor6);
+  margin-bottom: 60px;
+  line-height: 1.7em;
+  width: 300px;
+}
+
+#numbers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+  color: var(--cor4);
+  row-gap: 5px;
+}
+
+.number {
+  font-family: "Inter";
+  font-weight: 700;
+  flex-basis: 33%;
+}
+
+.name {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--cor6);
+  font-size: 0.7em;
+  font-weight: 400;
+  flex-basis: 33%;
+}
+
+@media (max-width: 850px) {
+  body {
+    margin: 10% 0px 5% 0px;
+  }
+
+  div#card {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 5% 0 5%;
+  }
+
+  div#pink {
+    border-radius: 5px 5px 0 0;
+    width: 350px;
+    height: 256px;
+  }
+
+  div#image {
+    border-radius: 5px 5px 0 0;
+    width: 350px;
+    height: fit-content;
+  }
+
+  div#image > img {
+    width: 350px;
+    height: 256px;
+  }
+
+  img.responsive {
+    display: block;
+    border-radius: 5px 5px 0 0;
+    width: 350px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  div#content {
+    border-radius: 0 0 5px 5px;
+    padding: 38px 5px 38px 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div#text {
+    width: 300px;
+    height: fit-content;
+  }
+
+  div#text > h1 {
+    width: 280px;
+    text-align: center;
+  }
+
+  div#text > p {
+    width: 280px;
+    font-size: 1em;
+    line-height: 1.7em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  div#numbers {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    flex-basis: 100%;
+    align-items: center;
+    font-size: 25px;
+    column-gap: 10px;
+  }
+
+  .name {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .number:nth-of-type(6) {
+    margin-bottom: 0px;
+  }
+
+  .number:nth-of-type(1) {
+    order: 1;
+  }
+  .number:nth-of-type(2) {
+    order: 3;
+  }
+  .number:nth-of-type(3) {
+    order: 5;
+  }
+  .number:nth-of-type(4) {
+    order: 1;
+  }
+  .number:nth-of-type(5) {
+    order: 3;
+  }
+  .number:nth-of-type(6) {
+    order: 5;
+  }
+}
