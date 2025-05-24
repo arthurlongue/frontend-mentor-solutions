@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: hsl(213, 19%, 18%);
+  justify-content: center;
+  align-items: center;
+}
+
+div#caixa {
+  display: flex;
+  width: 300px;
+  height: 280px;
+  max-width: 300px;
+  max-height: 280px;
+  background: linear-gradient(to bottom, hsl(216, 12%, 54%), hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  flex-direction: column;
+  gap: 25px;
+  padding: 35px 25px 30px 25px;
+  border-radius: 5%;
+}
+
+div#img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 80px;
+  width: auto;
+}
+
+div#selecao {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  background-color: hsl(213, 19%, 30%);
+  color: hsl(25, 97%, 53%);
+  justify-content: center;
+  align-self: center;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+
+div#título {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: min-content;
+  color: white;
+}
+
+div#título > h1 {
+  font-size: 1.5em;
+}
+
+div#texto {
+  height: min-content;
+  margin-bottom: 20px;
+}
+
+div#texto > p {
+  font-size: 0.88em;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+
+teste{
+  color:rgba(255,255,64,0.4);
+  color:rgba(127,255,127,0.4);
+  color:rgba(255,127,255,0.4);
+  color:rgba(79,236,236,0.4);
+}

@@ -1,0 +1,9 @@
+div#nota>p:hover{
+    color: white;
+    background-color: hsl(216, 12%, 54%);
+}
+
+div#submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
