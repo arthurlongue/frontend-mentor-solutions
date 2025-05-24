@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --cor1: hsl(31, 77%, 52%);
+  --cor2: hsl(184, 100%, 22%);
+  --cor3: hsl(179, 100%, 13%);
+  --cor4: hsla(0, 0%, 100%, 0.75);
+  --cor5: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif; */
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+div#card {
+  display: grid;
+  height: 100vh;
+  margin: 0 10%;
+  max-width: 1050px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 550px;
+  width: 350px;
+  padding: 50px 50px 50px 50px;
+}
+
+.content > p {
+  width: 225px;
+}
+
+div#content1 {
+  background-color: var(--cor1);
+  border-radius: 10px 0 0 10px;
+}
+
+#c1 {
+  color: var(--cor1);
+}
+
+#c2 {
+  color: var(--cor2);
+}
+
+#c3 {
+  color: var(--cor3);
+}
+
+div#content2 {
+  background-color: var(--cor2);
+  border-radius: 0;
+}
+
+div#content3 {
+  background-color: var(--cor3);
+  border-radius: 0 10px 10px 0;
+}
+
+h1 {
+  color: var(--cor5);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5em;
+}
+
+p {
+  color: var(--cor4);
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.8em;
+  font-size: 1em;
+}
+
+a {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor5);
+  border-radius: 30px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  body {
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  div#card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 1350px;
+    margin: 10% 0;
+  }
+
+  .content {
+    height: 450px;
+    width: 375px;
+  }
+
+  .content > p {
+    width: 250px;
+  }
+
+  div#content1 {
+    border-radius: 5px 5px 0 0;
+  }
+
+  div#content3 {
+    border-radius: 0 0 5px 5px;
+  }
+
+  a {
+    margin-top: 0;
+  }
+}
