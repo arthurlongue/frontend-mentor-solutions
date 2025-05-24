@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1.5rem 1rem;
+  max-width: 700px;
+  border-radius: 0.5rem;
+  margin: 1em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.header h1 {
+  font-size: 1.3em;
+}
+.header h2 {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 500;
+  font-size: 1em;
+}
+
+#notifications {
+  background-color: hsl(219deg, 85%, 26%);
+  margin-left: 0.5rem;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+}
+.notification p {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.unread {
+  background-color: hsl(211deg, 68%, 94%);
+}
+.unread p:first-of-type::after {
+  content: "";
+  background-color: hsl(1deg, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.notification-wrapper {
+  margin-left: 1rem;
+}
+
+.name {
+  color: black;
+}
+
+.notification-picture {
+  width: 50px;
+  margin-left: auto;
+}
+
+.notification-avatar {
+  width: 40px;
+}
+
+.notification-private {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1rem;
+  border: 1px solid hsl(219deg, 14%, 63%);
+  margin: 1rem 0 1rem 5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.notification-private p {
+  color: hsl(219deg, 12%, 42%);
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  font-weight: 800;
+}
+a:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    margin: 0;
+  }
+}
